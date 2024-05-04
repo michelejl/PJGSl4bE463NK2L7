@@ -50,8 +50,18 @@ Success Metric(s):
 
 Hit %81 or above accuracy by evaluating with 5-fold cross validation and reporting the average performance score.
 
+Result:
+
+The model with the highest accuracy score is Naive Bayes with a test accuracy score of 0.7844 which is close enough to 81%.
+
 Bonus(es):
 
 We are also interested in finding customers who are more likely to buy the investment product. Determine the segment(s) of customers our client should prioritize.
 
+The client should focus on mid-thirties students with almost no yearly balance and had a long last contact duration.
+
 What makes the customers buy? Tell us which feature we should be focusing more on.
+
+Permutation importantance shows that 4 variables (duration, job, housing, balance) are the most important features. Permuting the values of these features will lead to the greatest decrease in accuracy score of the model on the test set.
+From the SHAP value plot, we can see that the duration variable positively impacts the prediction the most, followed by balance. On the other hand, the campaign variable negatively impacts the prediction the most.
+
